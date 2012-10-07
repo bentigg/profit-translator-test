@@ -1,0 +1,608 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x000000006d9fccf7, pid=4752, tid=4584
+#
+# JRE version: 6.0_26-b03
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (20.1-b02 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# V  [jvm.dll+0x20ccf7]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000035e800):  VMThread [stack: 0x00000000067e0000,0x00000000068e0000] [id=4584]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x0000000000000000
+
+Registers:
+RAX=0x0000000000000000, RBX=0x00000000068df1d0, RCX=0x00000000068df1d0, RDX=0x0000000000000000
+RSP=0x00000000068df060, RBP=0x0000000000000001, RSI=0x0000000000000000, RDI=0x00000000068df860
+R8 =0x0000000000000000, R9 =0x0000000000000000, R10=0x000000009cd9aff0, R11=0x000000006ddc3fa0
+R12=0x00000000000003ce, R13=0x0000000007cc8880, R14=0x000000006d7f0000, R15=0x0000000000000000
+RIP=0x000000006d9fccf7, EFLAGS=0x0000000000010206
+
+Top of Stack: (sp=0x00000000068df060)
+0x00000000068df060:   000000000065a4f0 0000000006bc0300
+0x00000000068df070:   00000000068df1d0 00000000068df860
+0x00000000068df080:   0000000000020000 00000000068df0c0
+0x00000000068df090:   000001e60000013a 0000000000000080
+0x00000000068df0a0:   0000000000000002 00000000005f0230
+0x00000000068df0b0:   0000000000000200 000000000065a4f0
+0x00000000068df0c0:   00000000068d0000 000007fefcfe132c
+0x00000000068df0d0:   0000000078ed3c3e 0000000000000066
+0x00000000068df0e0:   0000000000000080 0000000000000000
+0x00000000068df0f0:   0000000000000000 000000006d896be8
+0x00000000068df100:   0000000007db2a70 00000000005f0158
+0x00000000068df110:   00000000002b9590 0000000000268100
+0x00000000068df120:   0000000000000002 000000006d9fcab8
+0x00000000068df130:   000000000026d000 000000006d8b29dd
+0x00000000068df140:   00000000068df2a0 00000000002b9590
+0x00000000068df150:   000000009cd9aff0 000000006d9fc922 
+
+Instructions: (pc=0x000000006d9fccf7)
+0x000000006d9fccd7:   00 fb cb 20 00 9e cc 20 00 48 53 48 81 ec 20 01
+0x000000006d9fcce7:   00 00 48 8b 41 08 c7 41 10 00 00 00 00 48 8b d9
+0x000000006d9fccf7:   48 8b 10 80 7a 12 28 74 30 48 8d 15 61 d1 3d 00
+0x000000006d9fcd07:   48 8d 4c 24 20 41 b8 28 00 00 00 e8 09 4b df ff 
+
+
+Register to memory mapping:
+
+RAX=0x0000000000000000 is an unknown value
+RBX=0x00000000068df1d0 is an unknown value
+RCX=0x00000000068df1d0 is an unknown value
+RDX=0x0000000000000000 is an unknown value
+RSP=0x00000000068df060 is an unknown value
+RBP=0x0000000000000001 is an unknown value
+RSI=0x0000000000000000 is an unknown value
+RDI=0x00000000068df860 is an unknown value
+R8 =0x0000000000000000 is an unknown value
+R9 =0x0000000000000000 is an unknown value
+R10=0x000000009cd9aff0 is an oop
+{constant pool} 
+ - klass: {other class}
+ - cache: 0x000000009cd9be98
+ -   1 :  : 'com/action/ReadFile'
+ -   2 :  : 'com/action/ReadFile'
+ -   3 :  : 'java/lang/Object'
+ -   4 :  : 'java/lang/Object'
+ -   5 :  : 'genericList'
+ -   6 :  : 'Ljava/util/ArrayList;'
+ -   7 :  : 'Signature'
+ -   8 :  : 'Ljava/util/ArrayList<Lcom/models/Generic;>;'
+ -   9 :  : 'paymentReceivedList'
+ -  10 :  : 'Ljava/util/ArrayList<Lcom/models/Payment;>;'
+ -  11 :  : 'paymentSentList'
+ -  12 :  : 'paymentEbayFees'
+ -  13 :  : 'refundList'
+ -  14 :  : '<init>'
+ -  15 :  : '()V'
+ -  16 :  : 'Code'
+ -  17 :  : klass_index=3 name_and_type_index=18
+ -  18 :  : name_index=14 signature_index=15
+ -  19 :  : 'LineNumberTable'
+ -  20 :  : 'LocalVariableTable'
+ -  21 :  : 'this'
+ -  22 :  : 'Lcom/action/ReadFile;'
+ -  23 :  : '(Ljava/lang/String;)V'
+ -  24 :  : 'java/util/ArrayList'
+ -  25 :  : 'java/util/ArrayList'
+ -  26 :  : klass_index=24 name_and_type_index=18
+ -  27 :  : klass_index=1 name_and_type_index=28
+ -  28 :  : name_index=5 signature_index=6
+ -  29 :  : klass_index=1 name_and_type_index=30
+ -  30 :  : name_index=9 signature_index=6
+ -  31 :  : klass_index=1 name_and_type_index=32
+ -  32 :  : name_index=11 signature_index=6
+ -  33 :  : klass_index=1 name_and_type_index=34
+ -  34 :  : name_index=12 signature_index=6
+ -  35 :  : klass_index=1 name_and_type_index=36
+ -  36 :  : name_index=13 signature_index=6
+ -  37 :  : 'java/io/BufferedReader'
+ -  38 :  : 'java/io/BufferedReader'
+ -  39 :  : 'java/io/FileReader'
+ -  40 :  : 'java/io/FileReader'
+ -  41 :  : klass_index=39 name_and_type_index=42
+ -  42 :  : name_index=14 signature_index=23
+ -  43 :  : klass_index=37 name_and_type_index=44
+ -  44 :  : name_index=14 signature_index=45
+ -  45 :  : '(Ljava/io/Reader;)V'
+ -  46 :  : "" {0x9c8fb838}
+ -  47 :  : ''
+ -  48 :  : klass_index=37 name_and_type_index=49
+ -  49 :  : name_index=50 signature_index=51
+ -  50 :  : 'readLine'
+ -  51 :  : '()Ljava/lang/String;'
+ -  52 :  : 'com/models/Generic'
+ -  53 :  : 'com/models/Generic'
+ -  54 :  : klass_index=52 name_and_type_index=18
+ -  55 :  : klass_index=56 name_and_type_index=58
+ -  56 :  : 'java/lang/System'
+ -  57 :  : 'java/lang/System'
+ -  58 :  : name_index=59 signature_index=60
+ -  59 :  : 'out'
+ -  60 :  : 'Ljava/io/PrintStream;'
+ -  61 :  : 'java/lang/StringBuilder'
+ -  62 :  : 'java/lang/StringBuilder'
+ -  63 :  : "line: " {0x9cd95da0}
+ -  64 :  : 'line: '
+ -  65 :  : klass_index=61 name_and_type_index=42
+ -  66 :  : klass_index=61 name_and_type_index=67
+ -  67 :  : name_index=68 signature_index=69
+ -  68 :  : 'append'
+ -  69 :  : '(Ljava/lang/String;)Ljava/lang/StringBuilder;'
+ -  70 :  : klass_index=61 name_and_type_index=71
+ -  71 :  : name_index=72 signature_index=51
+ -  72 :  : 'toString'
+ -  73 :  : klass_index=74 name_and_type_index=76
+ -  74 :  : 'java/io/PrintStream'
+ -  75 :  : 'java/io/PrintStream'
+ -  76 :  : name_index=77 signature_index=23
+ -  77 :  : 'println'
+ -  78 :  : "	" {0x9cd95ee8}
+ -  79 :  : '	'
+ -  80 :  : 'java/util/StringTokenizer'
+ -  81 :  : 'java/util/StringTokenizer'
+ -  82 :  : klass_index=80 name_and_type_index=83
+ -  83 :  : name_index=14 signature_index=84
+ -  84 :  : '(Ljava/lang/String;Ljava/lang/String;)V'
+ -  85 :  : klass_index=80 name_and_type_index=86
+ -  86 :  : name_index=87 signature_index=51
+ -  87 :  : 'nextToken'
+ -  88 :  : klass_index=52 name_and_type_index=89
+ -  89 :  : name_index=90 signature_index=23
+ -  90 :  : 'setDate'
+ -  91 :  : klass_index=52 name_and_type_index=92
+ -  92 :  : name_index=93 signature_index=23
+ -  93 :  : 'setTime'
+ -  94 :  : klass_index=52 name_and_type_index=95
+ -  95 :  : name_index=96 signature_index=23
+ -  96 :  : 'setTimeZone'
+ -  97 :  : klass_index=52 name_and_type_index=98
+ -  98 :  : name_index=99 signature_index=23
+ -  99 :  : 'setName'
+ - 100 :  : klass_index=52 name_and_type_index=101
+ - 101 :  : name_index=102 signature_index=23
+ - 102 :  : 'setType'
+ - 103 :  : klass_index=52 name_and_type_index=104
+ - 104 :  : name_index=105 signature_index=23
+ - 105 :  : 'setStatus'
+ - 106 :  : 'java/lang/Double'
+ - 107 :  : 'java/lang/Double'
+ - 108 :  : klass_index=1 name_and_type_index=109
+ - 109 :  : name_index=110 signature_index=111
+ - 110 :  : 'isParsable'
+ - 111 :  : '(Ljava/lang/Object;Ljava/lang/String;)Z'
+ - 112 :  : klass_index=106 name_and_type_index=113
+ - 113 :  : name_index=114 signature_index=115
+ - 114 :  : 'parseDouble'
+ - 115 :  : '(Ljava/lang/String;)D'
+ - 116 :  : klass_index=52 name_and_type_index=117
+ - 117 :  : name_index=118 signature_index=119
+ - 118 :  : 'setGross'
+ - 119 :  : '(D)V'
+ - 120 :  : klass_index=52 name_and_type_index=121
+ - 121 :  : name_index=122 signature_index=119
+ - 122 :  : 'setFee'
+ - 123 :  : klass_index=52 name_and_type_index=124
+ - 124 :  : name_index=125 signature_index=119
+ - 125 :  : 'setNet'
+ - 126 :  : klass_index=52 name_and_type_index=127
+ - 127 :  : name_index=128 signature_index=23
+ - 128 :  : 'setFromEmail'
+ - 129 :  : klass_index=52 name_and_type_index=130
+ - 130 :  : name_index=131 signature_index=23
+ - 131 :  : 'setTransactionId'
+ - 132 :  : klass_index=52 name_and_type_index=133
+ - 133 :  : name_index=134 signature_index=23
+ - 134 :  : 'setCounterPartyStatus'
+ - 135 :  : klass_index=52 name_and_type_index=136
+ - 136 :  : name_index=137 signature_index=23
+ - 137 :  : 'setAddressStatus'
+ - 138 :  : "itemTitle: " {0x9cd9c8c0}
+ - 139 :  : 'itemTitle: '
+ - 140 :  : klass_index=52 name_and_type_index=141
+ - 141 :  : name_index=142 signature_index=23
+ - 142 :  : 'setItemTitle'
+ - 143 :  : "itemId: " {0x9cd9c908}
+ - 144 :  : 'itemId: '
+ - 145 :  : klass_index=52 name_and_type_index=146
+ - 146 :  : name_index=147 signature_index=23
+ - 147 :  : 'setItemId'
+ - 148 :  : klass_index=52 name_and_type_index=149
+ - 149 :  : name_index=150 signature_index=119
+ - 150 :  : 'setShippingAndHandling'
+ - 151 :  : klass_index=52 name_and_type_index=152
+ - 152 :  : name_index=153 signature_index=119
+ - 153 :  : 'setInsurance'
+ - 154 :  : klass_index=52 name_and_type_index=155
+ - 155 :  : name_index=156 signature_index=119
+ - 156 :  : 'setSalesTax'
+ - 157 :  : klass_index=52 name_and_type_index=158
+ - 158 :  : name_index=159 signature_index=23
+ - 159 :  : 'setBuyerId'
+ - 160 :  : klass_index=52 name_and_type_index=161
+ - 161 :  : name_index=162 signature_index=23
+ - 162 :  : 'setItemUrl'
+ - 163 :  : klass_index=52 name_and_type_index=164
+ - 164 :  : name_index=165 signature_index=23
+ - 165 :  : 'setReferenceTxnId'
+ - 166 :  : klass_index=52 name_and_type_index=167
+ - 167 :  : name_index=168 signature_index=23
+ - 168 :  : 'setReceiptId'
+ - 169 :  : klass_index=52 name_and_type_index=170
+ - 170 :  : name_index=171 signature_index=119
+ - 171 :  : 'setBalance'
+ - 172 :  : klass_index=52 name_and_type_index=173
+ - 173 :  : name_index=174 signature_index=23
+ - 174 :  : 'setAddressLine1'
+ - 175 :  : klass_index=52 name_and_type_index=176
+ - 176 :  : name_index=177 signature_index=23
+ - 177 :  : 'setAddressLine2'
+ - 178 :  : klass_index=52 name_and_type_index=179
+ - 179 :  : name_index=180 signature_index=23
+ - 180 :  : 'setCity'
+ - 181 :  : klass_index=52 name_and_type_index=182
+ - 182 :  : name_index=183 signature_index=23
+ - 183 :  : 'setState'
+ - 184 :  : klass_index=52 name_and_type_index=185
+ - 185 :  : name_index=186 signature_index=23
+ - 186 :  : 'setZipCode'
+ - 187 :  : klass_index=52 name_and_type_index=188
+ - 188 :  : name_index=189 signature_index=23
+ - 189 :  : 'setCountry'
+ - 190 :  : klass_index=80 name_and_type_index=191
+ - 191 :  : name_index=192 signature_index=193
+ - 192 :  : 'hasMoreTokens'
+ - 193 :  : '()Z'
+ - 194 :  : klass_index=24 name_and_type_index=195
+ - 195 :  : name_index=196 signature_index=197
+ - 196 :  : 'add'
+ - 197 :  : '(Ljava/lang/Object;)Z'
+ - 198 :  : "Exception while reading csv file: " {0x9cd9c948}
+ - 199 :  : 'Exception while reading csv file: '
+ - 200 :  : klass_index=61 name_and_type_index=201
+ - 201 :  : name_index=68 signature_index=202
+ - 202 :  : '(Ljava/lang/Object;)Ljava/lang/StringBuilder;'
+ - 203 :  : " + e.getMessage()" {0x9cd9c9c0}
+ - 204 :  : ' + e.getMessage()'
+ - 205 :  : "LINE: " {0x9cd9ca18}
+ - 206 :  : 'LINE: '
+ - 207 :  : klass_index=61 name_and_type_index=208
+ - 208 :  : name_index=68 signature_index=209
+ - 209 :  : '(I)Ljava/lang/StringBuilder;'
+ - 210 :  : " TOKEN: " {0x9cd9ca58}
+ - 211 :  : ' TOKEN: '
+ - 212 :  : klass_index=74 name_and_type_index=213
+ - 213 :  : name_index=214 signature_index=23
+ - 214 :  : 'print'
+ - 215 :  : klass_index=1 name_and_type_index=216
+ - 216 :  : name_index=217 signature_index=15
+ - 217 :  : 'separateGenerics'
+ - 218 :  : "Exception while separating generics: " {0x9cd9ca98}
+ - 219 :  : 'Exception while separating generics: '
+ - 220 :  : klass_index=221 name_and_type_index=223
+ - 221 :  : 'java/lang/Exception'
+ - 222 :  : 'java/lang/Exception'
+ - 223 :  : name_index=224 signature_index=51
+ - 224 :  : 'getMessage'
+ - 225 :  : 'location'
+ - 226 :  : 'Ljava/lang/String;'
+ - 227 :  : 'lineNumber'
+ - 228 :  : 'I'
+ - 229 :  : 'tokenNumber'
+ - 230 :  : 'br'
+ - 231 :  : 'Ljava/io/BufferedReader;'
+ - 232 :  : 'strLine'
+ - 233 :  : 'st'
+ - 234 :  : 'Ljava/util/StringTokenizer;'
+ - 235 :  : 'generic'
+ - 236 :  : 'Lcom/models/Generic;'
+ - 237 :  : 'delim'
+ - 238 :  : 'next'
+ - 239 :  : 'e'
+ - 240 :  : 'Ljava/lang/Exception;'
+ - 241 :  : 'StackMapTable'
+ - 242 :  : 'java/lang/String'
+ - 243 :  : 'java/lang/String'
+ - 244 :  : klass_index=24 name_and_type_index=245
+ - 245 :  : name_index=246 signature_index=247
+ - 246 :  : 'get'
+ - 247 :  : '(I)Ljava/lang/Object;'
+ - 248 :  : klass_index=52 name_and_type_index=249
+ - 249 :  : name_index=250 signature_index=51
+ - 250 :  : 'getType'
+ - 251 :  : "Cancelled Fee" {0x9cd9cb18}
+ - 252 :  : 'Cancelled Fee'
+ - 253 :  : klass_index=242 name_and_type_index=254
+ - 254 :  : name_index=255 signature_index=197
+ - 255 :  : 'equals'
+ - 256 :  : "Express Checkout Payment Received" {0x9cd9cb68}
+ - 257 :  : 'Express Checkout Payment Received'
+ - 258 :  : klass_index=1 name_and_type_index=259
+ - 259 :  : name_index=260 signature_index=261
+ - 260 :  : 'createPaymentReceived'
+ - 261 :  : '(I)V'
+ - 262 :  : "Mobile Express Checkout Payment Received" {0x9cd9cbe0}
+ - 263 :  : 'Mobile Express Checkout Payment Received'
+ - 264 :  : "Mobile Payment Received" {0x9cd9cc60}
+ - 265 :  : 'Mobile Payment Received'
+ - 266 :  : "Express Checkout Payment Sent" {0x9cd9ccc0}
+ - 267 :  : 'Express Checkout Payment Sent'
+ - 268 :  : klass_index=1 name_and_type_index=269
+ - 269 :  : name_index=270 signature_index=261
+ - 270 :  : 'createPaymentSent'
+ - 271 :  : "Payment Sent" {0x9cd9cd30}
+ - 272 :  : 'Payment Sent'
+ - 273 :  : "Preapproved Payment Sent" {0x9cd9cd78}
+ - 274 :  : 'Preapproved Payment Sent'
+ - 275 :  : klass_index=52 name_and_type_index=276
+ - 276 :  : name_index=277 signature_index=51
+ - 277 :  : 'getItemTitle'
+ - 278 :  : "Monthly eBay Seller Fees" {0x9cd9cdd8}
+ - 279 :  : 'Monthly eBay Seller Fees'
+ - 280 :  : klass_index=242 name_and_type_index=281
+ - 281 :  : name_index=282 signature_index=283
+ - 282 :  : 'equalsIgnoreCase'
+ - 283 :  : '(Ljava/lang/String;)Z'
+ - 284 :  : "item title: " {0x9cd9ce38}
+ - 285 :  : 'item title: '
+ - 286 :  : "Update to eCheck Received" {0x9cd9ce80}
+ - 287 :  : 'Update to eCheck Received'
+ - 288 :  : "Withdraw Funds to a Bank Account" {0x9cd9cee8}
+ - 289 :  : 'Withdraw Funds to a Bank Account'
+ - 290 :  : "Refund" {0x9cd9cf58}
+ - 291 :  : 'Refund'
+ - 292 :  : klass_index=1 name_and_type_index=293
+ - 293 :  : name_index=294 signature_index=261
+ - 294 :  : 'createRefund'
+ - 295 :  : "Did not find type for item: " {0x9cd9cf98}
+ - 296 :  : 'Did not find type for item: '
+ - 297 :  : klass_index=52 name_and_type_index=298
+ - 298 :  : name_index=214 signature_index=51
+ - 299 :  : klass_index=24 name_and_type_index=300
+ - 300 :  : name_index=301 signature_index=302
+ - 301 :  : 'size'
+ - 302 :  : '()I'
+ - 303 :  : 'i'
+ - 304 :  : 'type'
+ - 305 :  : 'com/models/Payment'
+ - 306 :  : 'com/models/Payment'
+ - 307 :  : klass_index=305 name_and_type_index=308
+ - 308 :  : name_index=14 signature_index=309
+ - 309 :  : '(Lcom/models/Generic;)V'
+ - 310 :  : 'payment'
+ - 311 :  : 'Lcom/models/Payment;'
+ - 312 :  : 'createEbayFees'
+ - 313 :  : 'java/lang/Class'
+ - 314 :  : 'java/lang/Class'
+ - 315 :  : klass_index=3 name_and_type_index=316
+ - 316 :  : name_index=317 signature_index=318
+ - 317 :  : 'getClass'
+ - 318 :  : '()Ljava/lang/Class;'
+ - 319 :  : klass_index=313 name_and_type_index=320
+ - 320 :  : name_index=321 signature_index=322
+ - 321 :  : 'getMethods'
+ - 322 :  : '()[Ljava/lang/reflect/Method;'
+ - 323 :  : klass_index=324 name_and_type_index=326
+ - 324 :  : 'java/lang/reflect/Method'
+ - 325 :  : 'java/lang/reflect/Method'
+ - 326 :  : name_index=327 signature_index=51
+ - 327 :  : 'getName'
+ - 328 :  : "parse" {0x9cd9d000}
+ - 329 :  : 'parse'
+ - 330 :  : klass_index=242 name_and_type_index=331
+ - 331 :  : name_index=332 signature_index=283
+ - 332 :  : 'startsWith'
+ - 333 :  : klass_index=324 name_and_type_index=334
+ - 334 :  : name_index=335 signature_index=302
+ - 335 :  : 'getModifiers'
+ - 336 :  : klass_index=337 name_and_type_index=339
+ - 337 :  : 'java/lang/reflect/Modifier'
+ - 338 :  : 'java/lang/reflect/Modifier'
+ - 339 :  : name_index=340 signature_index=341
+ - 340 :  : 'isStatic'
+ - 341 :  : '(I)Z'
+ - 342 :  : klass_index=337 name_and_type_index=343
+ - 343 :  : name_index=344 signature_index=341
+ - 344 :  : 'isPublic'
+ - 345 :  : klass_index=324 name_and_type_index=346
+ - 346 :  : name_index=347 signature_index=348
+ - 347 :  : 'getGenericParameterTypes'
+ - 348 :  : '()[Ljava/lang/reflect/Type;'
+ - 349 :  : klass_index=324 name_and_type_index=350
+ - 350 :  : name_index=351 signature_index=352
+ - 351 :  : 'invoke'
+ - 352 :  : '(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;'
+ - 353 :  : 'java/lang/RuntimeException'
+ - 354 :  : 'java/lang/RuntimeException'
+ - 355 :  : 'java/lang/NoSuchMethodException'
+ - 356 :  : 'java/lang/NoSuchMethodException'
+ - 357 :  : klass_index=355 name_and_type_index=18
+ - 358 :  : klass_index=353 name_and_type_index=359
+ - 359 :  : name_index=14 signature_index=360
+ - 360 :  : '(Ljava/lang/Throwable;)V'
+ - 361 :  : 'parser'
+ - 362 :  : 'Ljava/lang/Object;'
+ - 363 :  : 'str'
+ - 364 :  : 'theClass'
+ - 365 :  : 'Ljava/lang/Class;'
+ - 366 :  : 'staticOnly'
+ - 367 :  : 'Z'
+ - 368 :  : 'foundAtLeastOne'
+ - 369 :  : 'methods'
+ - 370 :  : '[Ljava/lang/reflect/Method;'
+ - 371 :  : 'index'
+ - 372 :  : 'method'
+ - 373 :  : 'Ljava/lang/reflect/Method;'
+ - 374 :  : '[Ljava/lang/reflect/Method;'
+ - 375 :  : 'willParse'
+ - 376 :  : 'java/lang/Throwable'
+ - 377 :  : 'java/lang/Throwable'
+ - 378 :  : 'exception'
+ - 379 :  : 'Ljava/lang/Throwable;'
+ - 380 :  : 'getGenericList'
+ - 381 :  : '()Ljava/util/ArrayList;'
+ - 382 :  : '()Ljava/util/ArrayList<Lcom/models/Generic;>;'
+ - 383 :  : 'setGenericList'
+ - 384 :  : '(Ljava/util/ArrayList;)V'
+ - 385 :  : '(Ljava/util/ArrayList<Lcom/models/Generic;>;)V'
+ - 386 :  : 'LocalVariableTypeTable'
+ - 387 :  : 'getPaymentReceivedList'
+ - 388 :  : '()Ljava/util/ArrayList<Lcom/models/Payment;>;'
+ - 389 :  : 'setPaymentReceivedList'
+ - 390 :  : '(Ljava/util/ArrayList<Lcom/models/Payment;>;)V'
+ - 391 :  : 'getPaymentSentList'
+ - 392 :  : 'setPaymentSentList'
+ - 393 :  : 'getRefundList'
+ - 394 :  : 'setRefundList'
+ - 395 :  : 'getPaymentEbayFees'
+ - 396 :  : 'setPaymentEbayFees'
+ - 397 :  : 'SourceFile'
+ - 398 :  : 'ReadFile.java'
+ - 399 :  : 'trim'
+ - 400 :  : name_index=399 signature_index=51
+ - 401 :  : klass_index=242 name_and_type_index=400
+ - 402 :  : """ {0x9cd9d040}
+ - 403 :  : '"'
+ - 404 :  : 'replace'
+ - 405 :  : '(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;'
+ - 406 :  : name_index=404 signature_index=405
+ - 407 :  : klass_index=242 name_and_type_index=406
+
+R11=0x000000006ddc3fa0 is an unknown value
+R12=0x00000000000003ce is an unknown value
+R13=0x0000000007cc8880 is an unknown value
+R14=0x000000006d7f0000 is an unknown value
+R15=0x0000000000000000 is an unknown value
+
+
+Stack: [0x00000000067e0000,0x00000000068e0000],  sp=0x00000000068df060,  free space=1020k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x20ccf7]
+
+VM_Operation (0x000000000760f950): GetOrSetLocal, mode: safepoint, requested by thread 0x0000000006b3e000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0000000006bab000 JavaThread "ReaderThread" [_thread_in_native, id=7652, stack(0x00000000080b0000,0x00000000081b0000)]
+  0x0000000006b64800 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=7228, stack(0x0000000007ab0000,0x0000000007bb0000)]
+  0x0000000006b5c000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=5956, stack(0x00000000079b0000,0x0000000007ab0000)]
+  0x0000000006b59800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=7336, stack(0x00000000078b0000,0x00000000079b0000)]
+  0x0000000006b4b000 JavaThread "JDWP Command Reader" daemon [_thread_in_native, id=6364, stack(0x00000000077b0000,0x00000000078b0000)]
+  0x0000000006b4a000 JavaThread "JDWP Event Helper Thread" daemon [_thread_blocked, id=5356, stack(0x00000000076b0000,0x00000000077b0000)]
+  0x0000000006b3e000 JavaThread "JDWP Transport Listener: dt_socket" daemon [_thread_blocked, id=5436, stack(0x0000000007510000,0x0000000007610000)]
+  0x0000000006b35800 JavaThread "Attach Listener" daemon [_thread_blocked, id=4304, stack(0x0000000006de0000,0x0000000006ee0000)]
+  0x0000000006b30800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=7328, stack(0x0000000006ce0000,0x0000000006de0000)]
+  0x000000000036d000 JavaThread "Finalizer" daemon [_thread_blocked, id=5608, stack(0x00000000069e0000,0x0000000006ae0000)]
+  0x0000000000366000 JavaThread "Reference Handler" daemon [_thread_blocked, id=3868, stack(0x00000000068e0000,0x00000000069e0000)]
+  0x000000000026d000 JavaThread "main" [_thread_blocked, id=3196, stack(0x0000000002870000,0x0000000002970000)]
+
+Other Threads:
+=>0x000000000035e800 VMThread [stack: 0x00000000067e0000,0x00000000068e0000] [id=4584]
+  0x0000000006b82000 WatcherThread [stack: 0x0000000007bb0000,0x0000000007cb0000] [id=7940]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000000000026b290] Threads_lock - owner thread: 0x000000000035e800
+
+Heap
+ PSYoungGen      total 28224K, used 4368K [0x00000000e08b0000, 0x00000000e2820000, 0x0000000100000000)
+  eden space 24256K, 18% used [0x00000000e08b0000,0x00000000e0cf4080,0x00000000e2060000)
+  from space 3968K, 0% used [0x00000000e2440000,0x00000000e2440000,0x00000000e2820000)
+  to   space 3968K, 0% used [0x00000000e2060000,0x00000000e2060000,0x00000000e2440000)
+ PSOldGen        total 64448K, used 0K [0x00000000a1a00000, 0x00000000a58f0000, 0x00000000e08b0000)
+  object space 64448K, 0% used [0x00000000a1a00000,0x00000000a1a00000,0x00000000a58f0000)
+ PSPermGen       total 21248K, used 5748K [0x000000009c800000, 0x000000009dcc0000, 0x00000000a1a00000)
+  object space 21248K, 27% used [0x000000009c800000,0x000000009cd9d078,0x000000009dcc0000)
+
+Code Cache  [0x0000000002970000, 0x0000000002be0000, 0x0000000005970000)
+ total_blobs=227 nmethods=20 adapters=169 free_code_cache=49872960 largest_free_block=7040
+
+Dynamic libraries:
+0x0000000000400000 - 0x000000000042e000 	C:\Program Files\Java\jre6\bin\javaw.exe
+0x00000000773f0000 - 0x0000000077599000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000076e10000 - 0x0000000076f2f000 	C:\Windows\system32\kernel32.dll
+0x000007fefcfe0000 - 0x000007fefd04c000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefe8a0000 - 0x000007fefe97b000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefe430000 - 0x000007fefe4cf000 	C:\Windows\system32\msvcrt.dll
+0x000007fefea70000 - 0x000007fefea8f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefd280000 - 0x000007fefd3ad000 	C:\Windows\system32\RPCRT4.dll
+0x0000000076d10000 - 0x0000000076e0a000 	C:\Windows\system32\USER32.dll
+0x000007fefea00000 - 0x000007fefea67000 	C:\Windows\system32\GDI32.dll
+0x000007fefd270000 - 0x000007fefd27e000 	C:\Windows\system32\LPK.dll
+0x000007fefd050000 - 0x000007fefd119000 	C:\Windows\system32\USP10.dll
+0x000007fefd1f0000 - 0x000007fefd21e000 	C:\Windows\system32\IMM32.DLL
+0x000007fefe790000 - 0x000007fefe899000 	C:\Windows\system32\MSCTF.dll
+0x000007fefcc40000 - 0x000007fefcc7c000 	C:\Windows\system32\nvinitx.dll
+0x000000000f000000 - 0x000000000f006000 	C:\Program Files\NVIDIA Corporation\CoProcManager\_etoured.dll
+0x000007fef9b60000 - 0x000007fef9ba4000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvd3d9wrapx.dll
+0x000007fefe4d0000 - 0x000007fefe6a7000 	C:\Windows\system32\SETUPAPI.dll
+0x000007fefcd50000 - 0x000007fefcd86000 	C:\Windows\system32\CFGMGR32.dll
+0x000007fefe6b0000 - 0x000007fefe787000 	C:\Windows\system32\OLEAUT32.dll
+0x000007fefe1c0000 - 0x000007fefe3c3000 	C:\Windows\system32\ole32.dll
+0x000007fefcd30000 - 0x000007fefcd4a000 	C:\Windows\system32\DEVOBJ.dll
+0x000007fef99d0000 - 0x000007fef9a12000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvdxgiwrapx.dll
+0x000000006d7f0000 - 0x000000006dfa8000 	C:\Program Files\Java\jre6\bin\server\jvm.dll
+0x000007fefaf20000 - 0x000007fefaf5b000 	C:\Windows\system32\WINMM.dll
+0x000000006d760000 - 0x000000006d76e000 	C:\Program Files\Java\jre6\bin\verify.dll
+0x000000006d3b0000 - 0x000000006d3d7000 	C:\Program Files\Java\jre6\bin\java.dll
+0x00000000775c0000 - 0x00000000775c7000 	C:\Windows\system32\PSAPI.DLL
+0x000000006d420000 - 0x000000006d454000 	C:\Program Files\Java\jre6\bin\jdwp.dll
+0x000000006d630000 - 0x000000006d638000 	C:\Program Files\Java\jre6\bin\npt.dll
+0x000000006d7b0000 - 0x000000006d7c2000 	C:\Program Files\Java\jre6\bin\zip.dll
+0x000000006d270000 - 0x000000006d279000 	C:\Program Files\Java\jre6\bin\dt_socket.dll
+0x000007fefd220000 - 0x000007fefd26d000 	C:\Windows\system32\WS2_32.dll
+0x000007fefd1e0000 - 0x000007fefd1e8000 	C:\Windows\system32\NSI.dll
+0x000007fefac70000 - 0x000007fefac85000 	C:\Windows\system32\NLAapi.dll
+0x000007fef6010000 - 0x000007fef6025000 	C:\Windows\system32\napinsp.dll
+0x000007fef5ff0000 - 0x000007fef6009000 	C:\Windows\system32\pnrpnsp.dll
+0x000007fefc4b0000 - 0x000007fefc505000 	C:\Windows\System32\mswsock.dll
+0x000007fefc330000 - 0x000007fefc38b000 	C:\Windows\system32\DNSAPI.dll
+0x000007fef5fe0000 - 0x000007fef5feb000 	C:\Windows\System32\winrnr.dll
+0x000007fef76e0000 - 0x000007fef770e000 	C:\Program Files\Common Files\Microsoft Shared\Windows Live\WLIDNSP.DLL
+0x000007fefe980000 - 0x000007fefe9f1000 	C:\Windows\system32\SHLWAPI.dll
+0x0000000071060000 - 0x0000000071086000 	C:\Program Files\Bonjour\mdnsNSP.dll
+0x000007fefa920000 - 0x000007fefa947000 	C:\Windows\system32\Iphlpapi.DLL
+0x000007fefa900000 - 0x000007fefa90b000 	C:\Windows\system32\WINNSI.DLL
+0x000007fefa790000 - 0x000007fefa7e3000 	C:\Windows\System32\fwpuclnt.dll
+0x000007fef76d0000 - 0x000007fef76d8000 	C:\Windows\system32\rasadhlp.dll
+0x000007fefbe00000 - 0x000007fefbe07000 	C:\Windows\System32\wshtcpip.dll
+0x000000006d600000 - 0x000000006d617000 	C:\Program Files\Java\jre6\bin\net.dll
+0x000007fefc4a0000 - 0x000007fefc4a7000 	C:\Windows\System32\wship6.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:43441 -Dfile.encoding=Cp1252 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 43440 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames com.action.tests.ReadFileTest
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.7.0
+CLASSPATH=.;C:\Program Files (x86)\Java\jre6\lib\ext\QTJava.zip
+PATH=C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\12.0\DLLShared\;C:\Program Files (x86)\Roxio\OEM\AudioCore\;C:\android-sdk-windows\tools;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\; C:\Program Files\Java\jdk1.7.0\bin; C:\Program Files\apache-ant-1.8.2\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Common Files\Teleca Shared;QUARTUS_ROOTDIR\bin;C:\Ruby192\bin
+USERNAME=Ben Tiggelaar
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 6183084k(3236180k free), swap 12364316k(7976368k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (20.1-b02) for windows-amd64 JRE (1.6.0_26-b03), built on May  4 2011 07:15:24 by "java_re" with MS VC++ 8.0 (VS2005)
+
+time: Sat Oct 06 16:54:00 2012
+elapsed time: 735 seconds
+
